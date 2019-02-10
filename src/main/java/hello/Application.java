@@ -32,7 +32,7 @@ public class Application implements CommandLineRunner {
 
    @Override
    public void run(String... args) throws Exception {
-
+      System.out.println("run");
       String[] beans = appContext.getBeanDefinitionNames();
       Arrays.sort(beans);
       for (String bean : beans) {
